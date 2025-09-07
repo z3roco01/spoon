@@ -13,35 +13,35 @@ There is no traditional numerical addressed memory (execpt for program memory), 
 | n+0x02   | 4      | Integer value  |
 ### Types
 These are universial types, they are always supported. There may be support for program defined data types, but that is only planned
-- Reserved 0x00
+- Reserved 0x00  
 Should never be used.
-- Int 0x01
+- Int 0x01  
 | Position | Length | Description    |
 | :------- | :----: | -------------: |
 | 0x00     | 1      | Name lenght(n) |
 | 0x01     | n      | Name           |
 | n+0x02   | 4      | Integer value  |
-- Float 0x02
+- Float 0x02  
 | Position | Length | Description    |
 | :------- | :----: | -------------: |
 | 0x00     | 1      | Name length(n) |
 | 0x01     | n      | Name           |
 | n+0x02   | 4      | Float value    |
-- String 0x03
+- String 0x03  
 | Position | Length | Description      |
 | :------- | :----: | ---------------: |
 | 0x00     | 1      | Name length(n)   |
 | 0x01     | n      | Name             |
 | n+0x02   | 2      | String length(i) |
 | n+0x04   | i      | String contents  |
-- List 0x04
+- List 0x04  
 | Position | Length | Description    |
 | :------- | :----: | -------------: |
 | 0x00     | 1      | Name length(n) |
 | 0x01     | n      | Name           |
 | n+0x02   | 2      | Data length(d) |
 | n+0x04   | d      | Data(nameless variables) |
-- Array 0x05
+- Array 0x05  
 | Position | Length | Description    |
 | :------- | :----: | -------------: |
 | 0x00     | 1      | Name length(n) |
